@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | Assignment</title>
+    <style>
+      body{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZwnc2EkEQqvTGlObLmL6PbxwRN8Y-TelZcenuWvwS-H8I9mRFBqUA2jR6wXxlW53nBlo&usqp=CAU);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <h2><u><center> Question 1: </center></u></h2><br>
+    <h2>(1) What are the benefits of using CSS?</h2>
+    <p>(1) Quicker page loading. Pages load more slowly when there is more code.<br>
+        (2)Better user experience, second. CSS not only facilitates user-friendly formatting but also makes web sites easy on the eyes.<br>
+        (3) A shorter development period.<br>
+        (4) Simple Formatting Modifications.<br>
+        (5) Cross-Device Compatibility.
+    </p>
+    
+
+
+
+    <h2><u><center> Question 2: </center></u></h2><br>
+    <h2>(2) What are the disadvantages of CSS?</h2>
+    <p> <ul>
+       <li> confusion brought on by numerous CSS layers. Beginners are more prone to this problem.</li>
+    <li>Issues Across Browsers. Different web browsers function differently.</li>
+    <li>Safety concerns. In the tech- and data-driven world of today, security is crucial.</li>
+    <li>Additional work for the developers. </li></ul></p>
+    
+
+
+
+    <h2><u><center> Question 3: </center></u></h2><br>
+    <h2>(3) What is the difference between CSS2 and CSS3?</h2>
+    <p>The biggest difference between CSS2 and CSS3 is that CSS3 is now split into different modules. Since each module makes its way through the W3C individually, there’s a wider range of browser support. Make sure you test your CSS3 pages in as many browsers and operating systems as possible to ensure compatibility.</p>
+    
+
+
+
+
+    <h2><u><center> Question 4: </center></u></h2><br>
+    <h2>(4) Name a few CSS style components</h2>
+    <p><b> Selector:</b> class name, id name or element name that is target</p>
+    <p><b>Attribute:</b> name of the attribute you want to style for example border, color, background, position etc.</p>
+    <p><b>Value of Property:</b> value that will be assigned to attribute.</p>
+    <h2><u>Example:</u></h2>
+    <h3>selector</h3>
+     <p>- *universal selector <br>
+        - # id selector<br>
+        - .class selector<br>
+        - element name(type name) selector
+    </p>
+    
+
+
+
+    <h2><u><center> Question 5: </center></u></h2><br>
+    <h2>(5) What do you understand by CSS opacity?</h2>
+    <p>The opacity of an element is controlled by the opacity CSS attribute. Opacity, which is the inverse of transparency, refers to how much of the content behind an element is obscured.</p>
+    <p>-Opacity values are always floating values, minimum value is 0, and maximum value is 1.</p>
+    <p>-When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well.</p>
+    <h2><u>Example:</u></h2>
+    &lt;p style="width:150px; height: 150px; border: 1px solid black; background-color: rgba(138, 194, 54,);"&gt;&lt;/p&gt;
+    <p style="width:150px; height: 150px; border: 1px solid black; background-color: rgb(142, 204, 48);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere beatae accusantium! Expedita deserunt iusto ratione deleniti ullam soluta eos? </p>
+    &lt;p style="width:150px; height: 150px; border: 1px solid black; background-color: rgba(138, 194, 54, <u> 0.5</u>(opacity));"&gt;&lt;/p&gt;
+    <p style="width:150px; height: 150px; border: 1px solid black; background-color: rgba(145, 201, 60, 0.5);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat voluptates, sit voluptate nemo totam inventore nostrum officia vero exercitationem a! </p>
+
+
+
+    <h2><u><center> Question 6: </center></u></h2><br>
+    <h2>(6) How can the background color of an element be changed?</h2>
+    <p>Use the CSS background-color property to add a background colour to HTML. Put it within a style attribute and change the value to the desired colour name or code. Then include this style attribute in an HTML element, such as a heading, span tag, table, or div.</p>
+    <p>The background-color property in CSS is used to set the background color of an element. It applies solid colors as the element's background. The background of an element covers the total size, including the padding and border, but excluding margin. It can be applied to all HTML elements.</p>
+    <h3>Syntax</h3>
+    <p>element {<br>    
+        background-color: color_name | transparent | initial | inherit; <br>   
+    }   </p>
+    <h2><u>Example:</u></h2>
+    <p>background-color: lightgreen; </p>
+    <p>background-color: #ddaefa;</p>
+    <p>background-color: rgb(155, 55, 128); </p>
+    <p>background-color: hsl(60, 22%, 50%);  </p>
+
+
+
+    <h2><u><center> Question 7: </center></u></h2><br>
+    <h2>(7) How can image repetition of the backup be controlled?</h2>
+    <p>To control the repetition of an image in the background, use the background-repeat property.</p>
+    <h3>Syntax:</h3>
+    <h4>background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;</h4>
+    <h2><u>Example:</u></h2>
+    &lt;p style="width:250px; height:250px; border: 1px solid black; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L3Xu6egtNH7_jSOqr18lamQL_5F1JXeB4Fh7X6Sv&s); background-size: 100px;<b> background-repeat:repeat;</b>"&gt;&lt;/p&gt;
+    <p style="width:250px; height:250px; border: 1px solid black; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L3Xu6egtNH7_jSOqr18lamQL_5F1JXeB4Fh7X6Sv&s); background-size: 100px; background-repeat:repeat;"></p>
+
+
+
+    <h2><u><center> Question 8: </center></u></h2><br>
+    <h2>(8) What is the use of the background-position property?</h2>
+    <p>The background-position property is used to define the initial position of the background image. By default, the background image is placed on the top-left of the webpage.</p>
+    <p>You can set the following positions:</p>
+    <p>1.center<br>
+       2.left-top<br>
+       3.left-bottom<br>
+       4.right-top<br>
+       5.right-bottom</p>
+    <h2><u>Example:</u></h2>
+    <p>background: white url('good-morning.jpg');<br>  
+        background-repeat: no-repeat;<br>  
+        background-attachment: fixed;<br>
+       <b> background-position: center;</b>
+      </p>
+      &lt;p style="width:250px; height:250px; border: 1px solid black; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L3Xu6egtNH7_jSOqr18lamQL_5F1JXeB4Fh7X6Sv&s); background-size: 100px; background-repeat: no-repeat;<b> background-position: center;</b>"&gt;&lt;/p&gt;
+      <p style="width:250px; height:250px; border: 1px solid black; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L3Xu6egtNH7_jSOqr18lamQL_5F1JXeB4Fh7X6Sv&s); background-size: 100px; background-repeat: no-repeat; background-position: center;"></p>
+
+
+
+
+    <h2><u><center> Question 9: </center></u></h2><br>
+    <h2>(9) Which property controls the image scroll in the background?</h2>
+    <p>To set the scrolling of an image in the background, use the <b> <u> background-attachment property </u></b>.</p>
+    <p>background-attachment: fixed;<br>
+        background-attachment:scroll;</p>
+    <h2><u>Example:</u></h2>
+    &lt;p style="width:350px;  border: 1px solid black; color: aliceblue; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L3Xu6egtNH7_jSOqr18lamQL_5F1JXeB4Fh7X6Sv&s); background-size: cover; background-repeat:no-repeat; background-attachment: fixed;"&gt;&lt;/p&gt;
+    <p style="width:350px;  border: 1px solid black; color: aliceblue; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L3Xu6egtNH7_jSOqr18lamQL_5F1JXeB4Fh7X6Sv&s); background-size: cover; background-repeat:no-repeat; background-attachment: fixed;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maxime nemo nulla dolores minima doloremque tempore delectus recusandae facilis velit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum veniam unde tenetur. Iure necessitatibus sunt explicabo soluta exercitationem temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores non autem dolor cumque ipsam nemo? Veritatis nulla possimus impedit facere quas architecto ipsam aut vel corrupti ratione! Optio, dicta non odio aut suscipit modi nam perferendis voluptatum quae similique soluta eveniet, quam, dolorum possimus sit exercitationem. Deleniti, facilis. Rerum, delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem . </p>
+
+
+
+
+
+    <h2><u><center> Question 10: </center></u></h2><br>
+    <h2>(10) Why should background and color be used as separate properties?</h2>
+    <p>There are two factors at play here: It makes style sheets easier to read. In CSS, the background property is a difficult property that becomes even more complicated when paired with colour.</p>
+    <p>The major difference between CSS background vs background-color property is that the background property is shorthand of all background properties. On the other hand, the background-color property is the subset of the background property used to set the background color.</p>
+    <h2><u>Example:</u></h2>
+    &lt;p style="width:350px; height:300px; border: 1px solid black; color: aliceblue; <b>background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L3Xu6egtNH7_jSOqr18lamQL_5F1JXeB4Fh7X6Sv&s)</b>; background-size: cover; background-repeat:no-repeat;"&gt;&lt;/p&gt;
+    <h2>This is background</h2>
+    <p style="width:350px; height:300px; border: 1px solid black; color: aliceblue; background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4L3Xu6egtNH7_jSOqr18lamQL_5F1JXeB4Fh7X6Sv&s); background-size: cover; background-repeat:no-repeat;"></p>
+    &lt;p style="width:350px; height:300px; border: 1px solid black; color: aliceblue; <b> background-color: lightgreen;</b>"&gt;&lt;/p&gt;
+    <h2>This is background-color</h2>
+    <p style="width:350px; height:300px; border: 1px solid black; color: aliceblue; background-color: lightgreen;"></p>
+
+
+
+
+    <h2><u><center> Question 11: </center></u></h2><br>
+    <h2>(11) How to center block elements using CSS1?</h2>
+    <p> By setting the properties margin-left and margin-right to auto and width to some explicit value:</p>
+    <h2><u>Example:</u></h2>
+    &lt;p style="width: 180px; height: 50px; font-size: 20px; border: 5px solid black; <b> margin: 2% auto;</b>"&gt;Center block element&lt;/p&gt;
+    <p style="width: 180px; height: 50px; font-size: 20px; border: 5px solid black;  margin: 2% auto;">Center block element</p>
+
+
+
+    <h2><u><center> Question 12: </center></u></h2><br>
+    <h2>(12) How to maintain the CSS specification?</h2>
+    <p>The <b> World Wide Web Consortium (W3C)</b> maintains the CSS specifications. Although CSS is supported by every browser, the supported specification version has significant flaws. Some browsers even contain proprietary (vendor) prefixes and their own implementation of the specification.</p>
+    
+
+
+    <h2><u><center> Question 13: </center></u></h2><br>
+    <h2>(13) What are the ways to integrate CSS as a web page?</h2>
+    <p>There are three methods to integrate CSS on web pages.</p>
+    <p>1. Inline method - It is used to insert style sheets in HTML document</p>
+    <p>2. Embedded/Internal method - It is used to add a unique style to a single document</p>
+    <p>3. Linked/Imported/External method - It is used when you want to make changes on multiple pages.
+    </p>
+
+
+
+    <h2><u><center> Question 14: </center></u></h2><br>
+    <h2>(14) What is embedded style sheets?</h2>
+    <p> Embedded(Internal) CSS is used to apply CSS on a single document or page. It can affect all the elements of the page. It is written inside the style tag within head section of html.</p>
+    <h2><u>Example:</u></h2>
+    <h3>&lt;style&gt;<br>  
+        p{color:blue}<br>  
+        &lt;/style&gt; </h3>
+
+
+
+    <h2><u><center> Question 15: </center></u></h2><br>
+    <h2>(15) What are the external style sheets?</h2>
+    <p>An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage.</p>
+    <p>External CSS is used to apply CSS on multiple pages or all pages. Here, we write all the CSS code in a css file. Its extension must be .css for example style.css.</p>
+    <h2><u>Example:</u></h2>
+    <h3>p{color:blue} </h3>
+    <p>You need to link this style.css file to your html pages like this:</p>
+    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;  
+
+
+
+
+    <h2><u><center> Question 16: </center></u></h2><br>
+    <h2>(16) What are the advantages and disadvantages of using external style sheets?</h2>
+    <p>
+        <table>
+            <tr>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+        <tr>
+            <td>- Using them, the styles of multiple documents can be controlled from one file.</td>
+            <td>- In order to import style information for each document, an extra download is needed. </td>
+        </tr>
+        <tr>
+            <td>- Classes can be created for use on multiple HTML element types in many documents.</td>
+            <td>- Until the external style sheet is loaded, it may not be possible to render the document.</td>
+        </tr>
+        <tr>
+            <td>- In complex situations, selector and grouping methods can be used to apply styles.</td>
+            <td>- For small number of style definitions, it is not viable.</td>
+        </tr>
+        <tr>
+            <td>-In External Style Sheets, Classes can be made for use on numerous HTML <br> element types in many forms of the site.</td>
+            <td>-The execution of the file may be deferred till the external style sheet is loaded.</td>
+        </tr>
+        </table>
+    </p>
+
+
+
+    <h2><u><center> Question 17: </center></u></h2><br>
+    <h2>(17) What is the meaning of the CSS selector?</h2>
+    <p>The first component of a CSS Rule is a CSS selector. It is a set of phrases and patterns that instruct the browser which HTML elements to pick in order to apply the CSS property values contained in the rule to them.</p>
+    <p>CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.</p>
+    <h2><u>Example:</u></h2>
+    <h3>p is a selector</h3>
+    &lt;style&gt;<br>
+    p{<br>
+        margine:0;<br>
+        padding:0;<br>
+    }<br>
+    &lt;/style&gt;<br>
+    &lt;body&gt;<br>
+    &lt;p&gt; Lorem ipsum dolor sit amet.&lt;/p&gt;<br>
+    &lt;/body&gt;
+
+
+    <h2><u><center> Question 18: </center></u></h2><br>
+    <h2>(18) What are the media types allowed by CSS?</h2>
+    <p>The @media rule is used in media queries to apply different styles for different media types/devices. Media queries can be used to check many things, such as: width and height of the viewport. width and height of the device.</p>
+    <p></p>
+    <h2><u>Example:</u></h2>
+    <p>&lt;style tyle = "text/css"&gt;<br>
+        @media print {<br>
+        body { font-size: 10pt }<br>
+     }<br>
+   
+     @media screen {<br>
+        body { font-size: 12pt }<br>
+     }<br>
+     @media screen, print {<br>
+        body { line-height: 1.2 }<br>
+     }<br> 
+     &lt;/style&gt;</p>
+
+
+
+    <h2><u><center> Question 19: </center></u></h2><br>
+    <h2>(19) What is the rule set?</h2>
+    <p>A CSS rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is h1 , points to an HTML element. The declaration(s), which in this example are color: blue and text-align: center style the element with a property and value.</p>
+
+
+</body>
+</html>
