@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CSS-Assignment Project </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .section{
+            width: 100%;
+            height: 100vh;
+            background-image:url(https://image.shutterstock.com/image-photo/hot-air-balloons-flying-tour-260nw-1370720933.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-size: cover;      
+            clip-path: polygon(100% 0%, 0% 0%, 0% 80%,50% 100%, 100% 80%);
+            
+        }
+
+        /* .section img{
+            position: absolute;
+            z-index: -1;
+            height: inherit;
+            width: 100%;
+            clip-path: polygon(100% 0%,50% 10%, 0% 0%);
+
+        } */
+         .section .main{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .section .main .left{
+            width: 80px;
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid white;
+            color: lightgray;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .section .main .left .l{
+            background-color: white;
+            color: darkgray;
+            width: 40px;
+            text-align: center;
+            padding: 0 5px;
+        }
+        .section .main .left .ogo{
+            padding: 0 5px;
+        }
+        .section .main .right{
+            width: 50%;
+            font-size:15px;
+            padding-top: 40px;
+        }
+        .section .main .right span{
+            padding: 0px 20px;
+            color: aliceblue;
+        }
+        .section .main .right .home{
+        color: blue;
+        font-weight: 500;
+        text-decoration:  2px blue underline;
+        text-underline-offset: 10px;
+        }
+        .section .last{
+            width: 100%;
+            margin-top:10% ;
+            display: flex;
+            justify-content: space-between;
+            /* clip-path: polygon(100% 0%, 50% 70%, 0% 0%); */
+
+        }
+        .section .last .one{
+            width: 33%;
+        }
+        .section .last .two{
+         color: aliceblue;
+         width: 33%;            
+        }
+        .section .last .two h4{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .section .last .two h1{
+           letter-spacing: 5px;
+           text-align: center; 
+        }
+        .section .last .two {
+        
+        }
+        .section .last .two p{
+            text-align: center;
+            font-size: 15px;
+            margin: 15% 0 15% 0;
+        }
+        .section .last .two a{
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        /* margin-bottom: 10%; */
+        }
+        .now{
+            text-decoration: none;
+            padding: 20px;
+            background-color: rgb(241, 80, 80);
+        
+        }
+        .more{
+            text-decoration: none;
+            padding: 20px 45px;
+            margin-left: 30px;
+            border: 2px solid white;
+        }
+
+        .section .last .three{
+            width: 33%;
+        }
+
+
+        .article{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .article .box{
+         width: 18%;
+         height: 20vh;
+         padding: 20px;
+         margin-top: 8%;
+         text-align: center;
+         color: #333;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         display: flex;
+
+        }
+        .article .box p{
+            padding: 10px;
+        }
+        .box .sleek{
+            color:  rgb(212, 54, 54);
+        }
+        .box h3:hover{
+            color: rgb(212, 54, 54);
+            font-size: 25px;
+        }
+        .article .box .bx{
+            background-color: transparent;
+            border:1px solid #333;
+            width: 90px;
+            min-height: 90px;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+            transition: all 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .article .box .bx2{
+           transform: rotate(40deg);
+        }
+        .article .box .bx .fa{
+            font-size: 22px;
+        }
+        /* .article .box .bx1 img:hover{
+            transform: scale(1.3);
+        } */
+        .article .box .bx:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+<div class="section">
+    <!-- <img src="https://image.shutterstock.com/image-photo/hot-air-balloons-flying-tour-260nw-1370720933.jpg" alt=""> -->
+    <div class="main">
+    <div class="left">
+        <div class="l">L</div>
+        <div class="ogo">ogo</div>
+     </div>
+     <div class="right">
+        <span class="home">HOME</span>
+        <span>ABOUT US</span>
+        <span>PORTFOUO</span>
+        <span>PRICING</span>
+        <span>TEAM</span>
+        <span>BLOG</span>   
+        <span>CONTACT</span>
+     </div>
+   </div>
+
+
+    <div class="last">
+        <div class="one">
+            <FontAwesomeIcon icon="fa-duotone fa-angle-left" />
+        </div>
+        <div class="two">
+            <h4>Our Clients Are Our First Priority</h4>
+            <h1>WELCOME TO SKY</h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem repudiandae sunt minus ipsum cum. Expedita quam delectus   distinctio ab architecto modi dolor!  possimus. Eligendi quam molestias earum adipisci! Quos magni ea ipsa doloremque nesciunt, sint facilis quaerat saepe?</p>
+
+            <a href="#" class="now">GET STARTED NOW</a>
+            <a href="#" class="more">LEARN MORE</a>
+        </div>
+
+        <div class="three">
+            <i class="fa-duotone fa-chevron-right"></i>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class="box">
+        <div class="bx bx2 sleek">
+            <i class="fa fa-glasses"></i>
+        </div>
+        <h3 class="sleek">SLEEK DESIGN</h3>
+        <p>_____</p>
+        <p>Lorem ipsum dolor sit beatae cum enim ab ipsam voluptatem vitae aut! Numquam, nesciunt.</p>
+    </div>
+    <div class="box">
+        <div class="bx">
+            <i  class="fa fa-heart"></i>
+        </div>
+        <h3>CLEAN CODE</h3>
+        <p>_____</p>
+        <p>Lorem ipsum dolor sit beatae cum enim ab ipsam voluptatem vitae aut! Numquam, nesciunt.</p>
+    </div>
+    <div class="box">
+        <div class="bx">
+            <i class="fa fa-lightbulb"></i>
+        </div>
+        <h3>CREATIVE IDEAS</h3>
+        <p>_____</p>
+        <p>Lorem ipsum dolor sit  beatae cum enim ab ipsam voluptatem vitae aut! Numquam, nesciunt.</p>
+    </div>
+    <div class="box">
+        <div class="bx">
+            <i class="fa fa-comments"></i>
+        </div>
+        <h3>FREE SUPPORT</h3>
+        <p>_____</p>
+        <p>Lorem ipsum dolor sit  beatae cum enim ab ipsam voluptatem vitae aut! Numquam, nesciunt.</p>
+    </div>
+</div>
+</body>
+</html>
