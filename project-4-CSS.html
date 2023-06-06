@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>project-4 | CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        .container .box{
+            display: flex;
+        }
+       
+        .container{
+            width: 85%;
+            display: grid;
+            gap: 10px !important; 
+            grid-auto-rows: 250px;
+            margin: 0 auto;
+        }
+        .container .main-1{
+         display: grid;
+         grid-template-columns: 69.5% 29.5%;
+         gap: 10px !important; 
+
+        }
+        .container .main-2{
+            display: grid;
+            grid-template-columns: 24.4% 49.5% 24.4%;
+            gap: 10px !important; 
+
+        }
+        .container .main-3{
+            display: grid;
+            grid-template-columns: 49.6% 49.6%;
+            gap: 10px !important; 
+            
+        }
+        .container .main-4{
+            display: grid;
+            grid-template-columns: 32.8% 32.8% 32.8%;
+            gap: 10px !important; 
+        }
+
+
+        .container .main-1 .bx-1{
+            background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/4298/674298-h);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
+        .container .main-1 .bx-2{
+            background-image: url(https://exchange4media.gumlet.com/news-photo/1524838599_r2oBUW_Picture-Avengers.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top ;
+        }
+        .container .main-2 .bx-3{
+            background-image: url(https://images.livemint.com/img/2019/04/24/600x338/Avengers-Endgame_1556112337139.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top right;
+        }
+        .container .main-2 .bx-4{
+            background-image: url(https://hips.hearstapps.com/hmg-prod/images/the-avengersjpg-335f02e9a5fc152f-1639001511.jpeg?crop=1xw:0.37954665260938325xh;center,top);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+        }
+        .container .main-2 .bx-5{
+            background-image: url(https://m.media-amazon.com/images/M/MV5BMTcwNTg1Nzg2MF5BMl5BanBnXkFtZTcwNDEwOTUwOA@@._V1_QL75_UX500_CR0,47,500,281_.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+        }
+        .container .main-3 .bx-6{
+           background-image: url(https://i.ytimg.com/vi/L5q802oKdWg/maxresdefault.jpg);
+           background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom top;
+        }
+        .container .main-3 .bx-7{
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPK720Ib_5JPxM5ihB1RTktAv7ZkhtloPXRA&usqp=CAU);
+           background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+        .container .main-4 .bx-8{
+           background-image: url(https://resize.indiatv.in/centered/newbucket/1200_675/2019/04/avengers-1556253630.jpg);
+           background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+        }
+        .container .main-4 .bx-9{
+           background-image: url(https://bgr.com/wp-content/uploads/2019/03/avengers-endgame-sign-2.jpg?quality=82&strip=all&w=1020&h=574&crop=1);
+           background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+        }
+        .container .main-4 .bx-10{
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH9nApEIhxYfur3PI2dZLNVrq0Q9t7as2A5Q&usqp=CAU);
+           background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+        }
+
+        .container .w-100 .box {
+            background-position: left top;
+            transition: 1s ease-in-out;
+        }
+        .container .w-100 .box:hover{
+            /* transition: transform 5s ease-in-out; */
+            background-position: center center;
+        }
+        
+        
+        @media screen and (max-width:743px){
+
+            
+            .container{
+                width: 100%;
+            }
+
+            .container .main-1{
+               grid-template-columns: 100%;
+               grid-auto-rows: 120px;
+            }
+
+            .container .main-2{
+                grid-template-columns: 100%;
+                grid-auto-rows: 120px;
+            }
+
+            .container .main-3{
+                grid-template-columns: 100%;
+                grid-auto-rows: 120px;
+            }
+
+            .container .main-4{
+                grid-template-columns: 100%;
+                grid-auto-rows: 120px;
+            }
+    
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+       <div class="main-1 w-100">
+           <div class="box bx-1"></div>
+           <div class="box bx-2"></div>
+       </div>
+       <div class="main-2 w-100">
+          <div class="box bx-3"></div>
+          <div class="box bx-4"></div>
+          <div class="box bx-5"></div>
+       </div>
+       <div class="main-3 w-100">
+           <div class="box bx-6"></div>
+           <div class="box bx-7"></div>
+       </div>
+       <div class="main-4 w-100">
+            <div class="box bx-8"></div>
+            <div class="box bx-9"></div>
+            <div class="box bx-10"></div>
+       </div>
+</div>
+    
+</body>
+</html>
