@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Figma-project | CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #E5E5E5;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 5% auto;
+            background: #FBFAFE;
+            flex-wrap: wrap;
+        }
+
+        .container .header {
+            width: 100%;
+            margin: 5% auto;
+            /* border: 1px solid #F0EBFA; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container .header span a {
+            text-decoration: none;
+            color: #1D2830;
+        }
+
+        .container .header .left {
+            padding-top: 5%;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: -0.06em;
+            color: #1D2830;
+        }
+
+        .container .header .center {
+            padding-top: 5%;
+        }
+
+        .container .header .center span {
+            padding: 0 20px;
+        }
+
+        .container .header .center span a {
+            text-decoration: none;
+            color: #1D2830;
+        }
+
+        .container .header .right {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            padding-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .header .right .login {
+            padding: 0 10px;
+        }
+
+        .container .header .right .get {
+            text-align: center;
+            background: #ECE6FF;
+            border-radius: 4px;
+            padding: 5px 8px;
+        }
+
+        .container .header .right .login a {
+            text-decoration: none;
+            color: #1D2830;
+        }
+        .container .header .right .img{
+            display: none;
+        }
+        .container .header .right .img img{
+            width: 50px;
+        }
+
+        /* header end */
+        .container .section {
+            width: 100%;
+        }
+
+        .container .section-1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5%;
+        }
+
+        .container .section-1 .save {
+            background: #81C43B;
+            border-radius: 100px;
+            padding: 5px 15px;
+        }
+
+        .container .section-1 .save a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .container .section-1 .account {
+            background: #F2F9EB;
+            border-radius: 0px 100px 100px 0px;
+            padding: 5px 22px;
+        }
+
+        .container .section-1 .account a {
+            text-decoration: none;
+            color: #35414B;
+        }
+
+        /* section-1 end */
+
+        .container .section-2 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 60px;
+            letter-spacing: 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 60px;
+            color: #35414B;
+        }
+
+        .container .section-3 {
+            text-align: center;
+            padding-top: 15px;
+            color: #4E5A65;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .container .section-4 {
+            display: flex;
+            justify-content: center;
+            padding-top: 2%;
+        }
+
+        .container .section-4 .name {
+            background: #FFFFFF;
+            border: 1px solid #E1E5EA;
+            border-radius: 4px 0px 0px 4px;
+            padding: 10px 30px;
+        }
+
+        .container .section-4 .try {
+            background: #794CFF;
+            border: 1px solid #794CFF;
+            border-radius: 0px 4px 4px 0px;
+            padding: 10px 35px;
+        }
+
+        /* section end */
+        .container .img {
+            width: 80%;
+            margin: 5% auto;
+        }
+
+        .container .img img{
+            width: 100%;
+            height: inherit;
+            text-align: center;
+        }
+        /* img end */
+        .container .menu-start{
+            width: 100%;
+        }
+        .container .menu-start .over{
+            text-align: center;
+        }
+        .container .menu-start .menu{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .container .menu-start .menu .logo img{
+         width: 120px;
+        }
+        /* menu end */
+        .container .part{
+            width: 100%;
+            padding: 5%;
+            background: #FBFAFE;
+            /* background: white; */
+            border: 1px solid #F0EBFA;
+            display: flex;
+            justify-content: space-around;
+        }
+        .container .part .part-left{
+        width: 50%;
+        } 
+        .container .part .part-left img{
+            width: 100%;
+            height: inherit;
+        }   
+        /* border: 1px solid #E1E5EA; */
+        /* margin-left: -20px; */
+        /* display: flex;
+        position: relative; */
+
+        /* .container .part .part-left .part-1{
+         width: 370px;
+         height: 400px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         border: 1px solid #E1E5EA ;     
+         background:#FFFFFF;
+        }
+        .container .part .part-left .part-1 h3{
+         padding: 15px 20px;
+         color: #4E5A65;
+        }
+        .container .part .part-left .part-1 .bench{
+            padding: 8px 0px 5px 50px;
+            color: #4E5A65;
+        }
+        .container .part .part-left .part-1 .bench .denis{
+            padding: 9px;
+            color: #4E5A65;
+            margin: 8px 20px 8px 0px;
+            border: 2px solid #E1E5EA;
+        }
+        .container .part .part-left .part-1 .bench .denis a{
+            text-decoration: none;
+            color: #3B7FF6;
+        }
+        .container .part .part-left .part-2{
+            width: 350px;
+            height: 320px;
+            position: absolute;
+            left: 250px;
+            top: 130px;
+            border: 1px solid #E1E5EA;
+            background:#FFFFFF;
+        }
+        .container .part .part-left .part-2 .one{
+        display: flex;
+        justify-content: start;
+        }
+        .container .part .part-left .part-2 .one div{
+            width: 50px;
+            padding: 10px;
+        }
+        .container .part .part-left .part-2 .one div img{
+            width: 100%;
+            height: inherit;
+            border-radius: 50%;
+        }
+        .container .part .part-left .part-2 .two{
+
+        } */
+        .container .part .part-right{
+        
+        }
+        .container .part .part-right .content div{
+        font-size: 16px;  
+        padding: 7% 0 7% 0;
+        }
+        .container .part .part-right .content .team{
+            border-left: 5px solid #794CFF;
+            padding: 10px;
+            background: #F6F3FC;
+            color: #4E5A65;
+            Line-height: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        /* part end */
+        .container .easire{
+            width: 100%;
+            /* height: 90vh; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            -webkit-background-color: #E5E5E5 !important;
+        }
+        .container .easire h2{
+            margin-bottom: 4%;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #35414B;
+        }
+        .container .easire .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: space-between;
+            width: 100%;
+        }
+        .container .easire .box .box-1{
+         width: 100%;
+         /* height: 22vh;    */
+         display: flex;
+         justify-content: space-evenly;
+         margin-bottom: 5%;
+        }
+        .container .easire .box .box-1 .boxer{
+            width: 250px;
+            height: 150px;
+        }
+        .container .easire .box .box-1 .boxer div{
+            width: 20%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 10px 20px;
+            background-color: #FEF6EE;
+            border-radius: 100%;
+        }
+         .container .easire .box .box-2{
+         width: 100%;
+         display: flex;
+         justify-content: space-evenly;
+        }
+        .container .easire .box .box-2 .boxer{
+            width: 250px;
+            height:150px;
+        }
+        .container .easire .box .box-2 .boxer div{
+            width: 20%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 10px 20px;
+            background-color: #FEF6EE;
+            border-radius: 100%;
+        } 
+
+        /* easire end */
+        
+        .container .work{
+            width: 100%;
+            padding: 5%;
+            border: 1px solid #F0EBFA;
+            background: #FBFAFE;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .container .work-left h2{
+            Font-size: 40px;
+            font-weight: 800px;
+            Line-height: 40px;
+            margin-bottom: 6%;
+            color: #35414B;
+;
+        }
+        .container .work-left p{
+            margin-bottom: 6%;
+            color: #4E5A65;
+        }
+        .container .work-left h4{
+            background: #796EFF;
+            color: #ffffff;
+            padding: 10px;
+            width:50%;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .container .work-right{
+          width: 40%;
+        }
+        .container .work-right img{
+          width: 100%;
+          height: inherit;
+        }
+        /* work end */
+      
+
+        .container .last-container{
+            width: 100%;
+            padding: 5%;
+            height: 100vh;
+            background-color: #ffffff;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+        }
+        .container .last-container .last-one h2{
+         margin-bottom: 5%;
+         font-size: 30px;
+         letter-spacing: 1px;
+         color: #35414B;
+         text-align: center;
+         font-weight: 800px;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container .last-container .last-one p{
+            color: #4E5A65;
+            text-align: center;
+            margin-bottom: 4%;
+        }
+        .last-two{
+         width: 100%;
+         display: flex;
+         justify-content: space-evenly;
+        }
+        .last-two .jorge{
+            width:20%;
+            display: flex;
+            align-items: center;
+        }
+        .last-two .jorge:hover{
+            border-top: 3px solid #35414B;
+            padding-top: 15px;
+        }
+        .last-two .jorge div{
+            margin-left: 8%;
+        }
+        .container .last-container .last-two .jorge img{
+           width: 50px;
+        }
+        .container .last-container .last-three{
+           width: 80%;
+           height: 30vh;
+           background: #796EFF;
+           margin: 5% auto;
+           border-radius: 10px;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+
+        }
+        .container .last-container .last-three .employ{
+            text-align: center;
+            color: #ffffff;
+        }
+        .container .last-container .last-three .tools{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .container .last-container .last-three .tools .google-play{
+        width: 50%;
+        padding: 10px;
+        }
+        .container .last-container .last-three .tools .google-play img{
+            border-radius: 10px;
+            background-color: white;
+        }
+        /* last-container end */
+
+        .container .footer{
+         width: 100%;
+         background: #1D2830;
+        }
+        .container .footer .footer-one{
+            width: 100%;
+            padding: 5% 0;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            align-content: center;
+        }
+        .container .footer .company{
+            width: 18%;
+            color: #ffffff;
+            line-height: 34px;
+            align-self: center;
+            font-size: 22px;
+        }
+        .container .footer .company h4{
+            padding: 10px 0;
+            align-items: baseline;
+        }
+        .container .footer .company img{
+            width: 200px;
+        }
+        hr{
+            color: #ffffff;
+            opacity: 0.1;
+        }
+        .container .footer .footer-two{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 5% 0;
+        }
+        .container .footer .footer-two .footer-left{
+            width: 50%;
+            text-align: center;
+            color: #D9DBE1;
+        }
+        .container .footer .footer-two .footer-right{
+            width: 50%;
+            text-align: center;
+        }
+        .container .footer .footer-two .footer-right span{
+            border: 1px solid #333;
+            margin: 10px;
+            /* padding: 25px; */
+            /* border-radius: 100%; */
+        }
+        .container .footer .footer-two .footer-right span img{
+           
+        }
+         .container .footer .insta{
+            width: 100px;
+        }
+        @media screen and (max-width:980px) {
+            .container .header  {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .container .header .center{
+                display: none;
+            }
+            .container .header .right {
+                display: none;
+            }
+            .container .header .right img {
+               display: inline;
+            }
+
+            .container .section-4 {
+                flex-direction: column;
+                width: 50%;
+                margin: 0 auto;
+            }
+            .container .menu-start .menu{
+                flex-direction: column;
+                width: 50%;
+                align-items: center;
+            }
+            .container .part{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+            .container .part .part-right .content .team{
+                border-bottom: 5px solid #794CFF;
+                border-left: none;
+            }
+            .container .easire{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+            .container .easire .box{
+                margin: 5% auto;
+            }
+            .container .easire .box .box-1{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                margin: 5% auto;
+            }
+            .container .easire .box .box-2{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                margin: 5% auto;
+            }
+            .container .work{
+                flex-direction: column;
+                width: 100%;
+            }
+            .container .work-left h4{
+                justify-content: center;
+                align-items: center;
+                align-items: center;
+            }
+            .last-two{
+                margin: 5% auto;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .container .last-container .last-three{
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                align-items: center;
+            }
+            .container .last-container .last-three .tools{
+                flex-direction: column;
+
+            }
+            .container .footer .footer-one {
+                flex-direction: column;
+                margin-top: 10%;
+                width: 50%;
+                align-items: center;
+            }
+            .container .footer .footer-two {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <span>
+                    <a href="#"> team.flow</a>
+                </span>
+            </div>
+            <div class="center">
+                <span>
+                    <a href="#">How it Works</a>
+                </span>
+                <span>
+                    <a href="#"> Products</a>
+                </span>
+                <span>
+                    <a href="#"> Pricing</a>
+                </span>
+                <span>
+                    <a href="#"> Resources</a>
+                </span>
+            </div>
+            <div class="right">
+                <span class="login">
+                    <a href="#">Log in</a>
+                </span>
+                <span class="get">
+                    <a href="#">Get started free</a>
+                </span>
+                <span class="img">
+                    <img src="https://o.remove.bg/downloads/e0deb0df-2163-4bd3-a3ce-22764173764f/30-302546_grey-menu-icon-menu-toggle-icon-png-transparent-removebg-preview.png" width="50px" alt="">
+                    <p>Menu</p>
+                </span>
+            </div>
+        </div>
+        <!-- header end -->
+
+        <!-- section-1 start -->
+        <div class="section">
+            <div class="section-1">
+                <div class="save">
+                    <a href="#">Save 90%</a>
+                </div>
+                <div class="account">
+                    <a href="#">Get account of $59</a>
+                </div>
+            </div>
+
+            <div class="section-2">
+                <div>Manage the team <br> everyone wants to be on</div>
+            </div>
+            <div class="section-3">
+                <div>Simple platform that lets you master what great managers do best,<br> as develop trust,
+                    collaborate, and drive team performance.</div>
+            </div>
+            <div class="section-4">
+                <div class="name">
+                    <div> name@yourcompany.com</div>
+                </div>
+                <div class="try">
+                    <div>Try it free</div>
+                </div>
+            </div>
+        </div>
+        <!--section end -->
+        <!-- img start -->
+        <div class="img">
+                <img src="https://s3-alpha-sig.figma.com/img/39e1/923f/13d450236ee55a682dd1e900494e741e?Expires=1687132800&Signature=VuPMWLrawJLAwAVgjPE~yzPnB4CW8Ihfwt85zYN1yVvoaQ7OJNf~akYNp35km~wXwFRdVuzit6hWPoDLupDdFZxM4-cf-69tqwjLFODQ7QLHyv53WeXeoXf23j9XSQXU4ZTAs3aX9TqU2s4QsS7VsO85~W2dbt9UGTkc7rVD~x5Zdmg4riBOIqM4ubYXcP-tBzg20bL~tGG~QoKokWrQ5RLGgNjz6bUarmanB3S003gK~YYm2Pkci-Xj3AeI6lmzp19gH-y0BUYptVsm7zvpg1EckIjqkbwN15oahi0fjpD0bUqZguOibOles8zK0xRUKhfy~XXz7eC9cWfA3wgtAg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="">
+        </div>
+        <!-- img end -->
+         <!-- menu-start -->
+         <div class="menu-start">
+                <div class="over">
+                    <div>TRUSTED BY OVER 10.000+ WORLDS BEST TEAMS</div>
+                </div>
+                <div class="menu">
+                      <div class="logo">
+                          <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-sva-scholarship-20.png" alt="">
+                      </div>
+                      <div class="logo">
+                          <img src="https://masslandlords.net/wp-content/uploads/Airbnb-Logo.png" alt="">
+                      </div>
+                      <div class="logo">
+                          <img src="https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo-700x394.png" alt="">
+                      </div>
+                      <div class="logo">
+                           <img src="https://logolook.net/wp-content/uploads/2022/12/HubSpot-Logo-2005.png" alt="">
+                      </div>
+                      <div class="logo">
+                           <img src="https://www.edigitalagency.com.au/wp-content/uploads/slack-logo-png-1.png" alt="">
+                      </div>
+                </div>
+         </div>
+
+         <!-- menu-end -->
+        <!-- .part-start -->
+          <div class="part">
+                <div class="part-left">
+                    <img src="./timeline.png" alt="" width="300px" height="300px">
+                </div>
+                <div class="part-right">
+                     <div class="content">
+                            <div class="team">
+                                <h3>Survey your team</h3>
+                                <p>Powerful questions that get to the heart <br> of how team members really feel.</p>
+                            </div>
+                            <div>
+                                <h3>Resolve issues quickly</h3>
+                                <p>Anonymous messaging that connects <br> managers and employees.</p>
+                            </div>
+                            <hr>
+                            <div>
+                                <h3>Plan your 1-on-1s</h3>
+                                <p>Plan meetings together and give a stake <br> employees and teams.</p>
+                            </div>
+                            <hr>
+                            <div>
+                                <h3>Track your progress</h3>
+                                <p>Easy-to-read reports and sharable <br> results help managers and teams.</p>
+                            </div>
+                     </div>
+               </div>
+          </div>
+        <!-- part-end -->
+        <!-- easire-start -->
+            <div class="easire">
+                    <h2>Make your work easier</h2>
+                    <div class="box">
+                            <div class="box-1">
+                                <div class="boxer">
+                                    <div>
+                                        <img src="./Vector.png" alt="" width="30px" height="30px">
+                                    </div>
+                                    <h3>Team Surveys & Reports</h3>
+                                    <p>Short, anonymous surveys track your <br> team’s needs weekly so you can focus.</p>
+                                </div>
+                                <div class="boxer">
+                                    <div>
+                                        <img src="https://o.remove.bg/downloads/18828c75-bcef-46e3-807b-a441d1cfa3f2/1000_F_113875076_nc27jKmk9SJY6BmmD1aIxlVhfNc12GSg-removebg-preview.png" alt="" width="50px" height="30px">
+                                    </div>
+                                    <h3>Collaborative 1:1</h3>
+                                    <p>Build relationships by planning <br> 1-on-1s and start meetings.</p>
+                                </div>
+                                <div class="boxer">
+                                    <div>
+                                        <img src="https://o.remove.bg/downloads/640c41f9-72ba-4ab8-943e-8a6e15614a93/240_F_425009763_kmeH024bJhcFqUN2UHPsuimYxL87jhtK-removebg-preview.png" alt="" width="35px" height="30px">
+                                    </div>
+                                    <h3>Learning Center</h3>
+                                    <p>Quickly get solutions tailored to your <br> personal challenges from the manager.</p>
+                                </div>
+                            </div>
+                            <div class="box-2">
+                                <div class="boxer">
+                                    <div>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/10784/10784451.png" alt="" width="40px" height="30px">
+                                    </div>
+                                    <h3>Anonymous Messaging</h3>
+                                    <p>Develop trust in a safe channel for <br> important conversations.</p>
+                                </div>
+                                <div class="boxer"> 
+                                    <div>
+                                         <img src="./conversation.png" alt="" width="40px" height="30px">
+                                          <!--  https://o.remove.bg/downloads/d34df949-c2a3-4c0c-9290-d5263aa125ca/240_F_565443803_Soj91uFZEn11e4D6rUw49WrbQ70d0p9M-removebg-preview.png -->
+                                    </div>
+                                    <h3>Conversation Engine</h3>
+                                    <p>Communicate confidently with <br> recommended talking points.</p>
+                                </div>
+                                <div class="boxer">
+                                    <div>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/9760/9760101.png" alt="" width="40px" height="30px">
+                                    </div>
+                                    <h3>Exclusives Manager</h3>
+                                    <p>Access manager tips, activities and <br> best practices from our team of experts.</p>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        <!-- easire-end -->
+        <!-- work -->
+            <div class="work">
+                <div class="work-left">
+                   <h2>We work how you <br> work everyday</h2>
+                   <p>Since the easiest things to use actually <br> get used, we adapts to the way your <br> team works – not the other way around.</p>
+                   <h4>Get started free</h4>
+                </div>
+                <div class="work-right">
+                    <img src="./Group 26.png" alt="">
+                </div>
+            </div>              
+    <!-- work-end -->
+   <!-- last-container-start -->
+        <div class="last-container">
+            <div class="last-one">
+                <h2>Why customers love <br>working with us</h2>
+                <p>“It's amazing what has helped me learn about my team. <br> 
+                    I don't worry about blindspots anymore, and 1-on-1s have never <br>
+                    been more productive. The team loves it.”</p>
+            </div>
+            <div class="last-two">
+                <div class="jorge">
+                      <!-- <div class="jorge-png"> -->
+                        <!-- <div> -->
+                          <img src="./jorge-1.png" alt="">
+                        <!-- </div> -->
+                        <!-- </div> -->
+                        <div>
+                          <h4>Jorge Robertson</h4>
+                          <p>CS at Google</p>
+                        </div>
+                      
+                </div>
+                <div class="jorge">
+                        <!-- <div class="jorge-png"> -->
+                            <!-- <div> -->
+                            <img src="./jorge-2.png" alt="">
+                            <!-- </div> -->
+                        <!-- </div> -->
+                          <div>
+                            <h4>Francisco Bell</h4>
+                            <p>Designer at Microsoft</p>
+                          </div>
+                        
+                </div>
+                <div class="jorge">
+                        <!-- <div class="jorge-png"> -->
+                            <!-- <div> -->
+                            <img src="./jorge-3.png" alt="">
+                            <!-- </div> -->
+                        <!-- </div> -->
+                          <div>
+                            <h4>Beth Fox</h4>
+                            <p>Developer at Airbnb</p>
+                          </div>
+                       
+                </div>
+            </div>
+            <div class="last-three">
+                <div class="employ">
+                    <h2>84% of employees who use <br>
+                        trust their direct manager</h2>
+                </div>
+                <div class="tools">
+                    <div class="google-play">
+                        <img src="https://reefcentral.pt/wp-content/uploads/2019/04/get-on-google-play.png" width="170px" alt="">
+                    </div>
+                    <div class="google-play">
+                        <img src="https://www.pngkit.com/png/full/222-2228956_app-store-logo-app-store-icon-white.png" width="170px">
+                        <!-- <img src="https://o.remove.bg/downloads/072b6f06-f2c4-4bb0-af92-78645961d818/133-1338973_ios-app-icon-download-white-hd-png-download-removebg-preview.png" width="150px" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+                    <div class="footer-one">
+                        <div class="company">
+                            <h4>Company</h4>
+                            <p>About Us</p>
+                            <p>Blog</p>
+                            <p>Careers</p>
+                            <p>Contact Us</p>
+                        </div>
+                        <div class="company">
+                            <h4>Support</h4>
+                            <p>Help Center</p>
+                            <p>Safety Center</p>
+                            <p>Community</p>
+                        </div>
+                        <div class="company">
+                            <h4>Legal</h4>
+                            <p>Cookies Policy</p>
+                            <p>Privacy Policy</p>
+                            <p>Terms of Service</p>
+                        </div>
+                        <div class="company">
+                            <h4>Install App</h4>
+                            <img src="https://o.remove.bg/downloads/446402c5-3b16-49ba-a4ac-8abb20c2083b/png-clipart-google-play-and-app-store-logos-app-store-google-play-apple-apple-text-logo-thumbnail-removebg-preview.png" alt="">
+                            <!-- <img src="https://assets.stickpng.com/thumbs/5a902dbf7f96951c82922875.png" width="150px" alt="">
+                            <img src="https://o.remove.bg/downloads/a13483a8-30cd-4141-96b9-f86f1ac6d118/png-clipart-itunes-app-store-apple-logo-apple-text-rectangle-removebg-preview.png" alt=""> -->
+                        </div>
+                    </div>
+            <hr>
+                <div class="footer-two">
+                            <div class="footer-left">
+                            © 2020 - All rights reserved
+                            </div>
+                            <div class="footer-right">
+                                <span>
+                                  <!-- <img class="insta" src="https://o.remove.bg/downloads/4f19ff14-7161-422c-a202-ba99e27d8547/sm_5af2d4cabfdf2-removebg-preview.png" width="50px">   -->
+                                  <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph-900x900.png" width="45px" alt="">
+                                </span>
+                                <span>
+                                    <img src="https://cdn-liveutv.pressidium.com/wp-content/themes/liveu/static/assets/images/globe-language.png" width="50px" alt="">
+                                </span>
+                                <span>
+                                    <!-- <img src="https://o.remove.bg/downloads/dc069caa-1a0f-4c88-832a-9a17cafcba4f/1277234-middle-removebg-preview.png" alt=""> -->
+                                    <img src="https://pngimg.com/d/twitter_PNG15.png" width="50px" alt="">
+                                </span>
+                                <span>
+                                    <img src="https://www.citypng.com/public/uploads/preview/hd-white-youtube-yt-logo-symbol-icon-png-11637043675gcvxg522qx.png?v=2023060400" width="60px">
+                                </span>
+                                 <!-- <span>
+                                    
+                                </span> -->
+                                <!--
+                                <span>
+                                  <img src="./https://o.remove.bg/downloads/310b8b27-0682-4bb0-b1df-22d17624caf6/ball-removebg-preview.png" alt="">
+                                </span>
+                                <span>
+                                    <img src="https://o.remove.bg/downloads/3a7ff196-e1ad-4013-af6f-4aaa7a931c74/images-removebg-preview.png" alt="">
+                                </span>
+                                <span>
+                                    <img src="https://o.remove.bg/downloads/93970f93-f78b-46c0-b579-d4cd166eb017/hd-white-youtube-yt-logo-symbol-icon-png-11637043675gcvxg522qx-removebg-preview.png"  alt="">
+                                </span> -->
+                            </div>
+                </div>
+        </div>
+
+
+    </div>
+</body>https://www.pngkit.com/png/full/798-7987919_app-store-logo-white.png
+</html>
